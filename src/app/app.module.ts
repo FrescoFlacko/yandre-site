@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MediumPostCardComponent } from './molecule/medium-post-card/medium-post-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    MediumPostCardComponent
   ],
   imports: [
     BrowserModule,
