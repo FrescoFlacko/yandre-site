@@ -1,0 +1,19 @@
+@import '../../../assets/bootstrap/scss/style.violet.scss';
+@import "../../../assets/bootstrap/scss/theme";
+
+.technology-section-background {
+    background-color: $gray-100;
+}
+
+.technology-section {
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    span:first-child {
+        @include setFont(22px, 300, #666, 14px);
+    }
+
+    span:not(:first-child) {
+        font-size: 20px;
+    }
+}
