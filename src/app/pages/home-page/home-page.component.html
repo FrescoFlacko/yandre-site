@@ -72,4 +72,16 @@
             </div>
         </div>
     </section>
+    <section id="medium" class="success-stories">
+        <div class="container">
+            <header class="text-center">
+                <h1 class="small-heading">Latest Medium Posts</h1>
+              </header>
+            <div class="owl-carousel owl-theme stories-slider">
+                <div *ngFor="let post of mediumPosts;" class="story">
+                    <app-medium-post-card [title]="post['title']" [date]="post['isoDate']" [url]="post['link']" [imageUrl]="post['imageSrc']"></app-medium-post-card>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
